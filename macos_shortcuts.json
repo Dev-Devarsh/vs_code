@@ -1,9 +1,10 @@
+
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "ctrl+down",
+        "key": "cmd+down",
         "command": "editor.action.changeAll",
-        "when": "editorTextFocus && editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+f2",
@@ -58,15 +59,11 @@
     {
         "key": "ctrl+oem_period",
         "command": "-editor.action.quickFix",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly && syste"
     },
     {
         "key": "ctrl+oem_5",
         "command": "workbench.action.splitEditor"
-    },
-    {
-        "key": "ctrl+oem_5",
-        "command": "-workbench.action.splitEditor"
     },
     {
         "key": "alt+numpad_decimal",
@@ -74,22 +71,12 @@
         "when": "problemFocus"
     },
     {
-        "key": "ctrl+oem_period",
-        "command": "-problems.action.showQuickFixes",
-        "when": "problemFocus"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "-workbench.action.newWindow"
-    },
-    {
         "key": "ctrl+shift+n",
         "command": "flutter.createProject"
     },
     {
-        "key": "alt+oem_period",
-        "command": "editor.action.autoFix",
-        "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+        "key": "ctrl+shift+p",
+        "command": "remote.tunnel.openCommandPalette"
     },
     {
         "key": "shift+alt+oem_period",
@@ -125,31 +112,17 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+f5",
-        "command": "-dart.hotReload",
-        "when": "inDebugMode && debugType == 'dart'"
-    },
-    {
-        "key": "ctrl+s",
-        "command": "flutter.hotReload"
-    },
-    {
         "key": "alt+z",
         "command": "-workbench.action.terminal.sizeToContentWidth",
         "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
     },
     {
-        "key": "alt+x",
+        "key": "cmd+d",
         "command": "flutter.hotRestart"
     },
     {
         "key": "unknown",
         "command": "workbench.action.debug.start",
-        "when": "debuggersAvailable && debugState == 'inactive'"
-    },
-    {
-        "key": "f5",
-        "command": "-workbench.action.debug.start",
         "when": "debuggersAvailable && debugState == 'inactive'"
     },
     {
@@ -164,44 +137,26 @@
         "key": "f1",
         "command": "-workbench.action.showCommands"
     },
-    {
-        "key": "ctrl+f1",
-        "command": "workbench.action.debug.continue",
-        "when": "debugState == 'stopped'"
-    },
-    {
-        "key": "f5",
-        "command": "-workbench.action.debug.continue",
-        "when": "debugState == 'stopped'"
-    },
+    // {
+    //     "key": "ctrl+f1",
+    //     "command": "workbench.action.debug.continue",
+    //     "when": "debugState == 'stopped'"
+    // },
     {
         "key": "shift+up",
-        "command": "-cursorUpSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+up",
-        "command": "-list.expandSelectionUp",
+        "command": "list.expandSelectionUp",
         "when": "listFocus && listSupportsMultiselect && !inputFocus"
-    },
-    {
-        "key": "ctrl+c",
-        "command": "editor.action.clipboardCopyAction"
     },
     {
         "key": "cmd+c",
         "command": "-editor.action.clipboardCopyAction"
     },
     {
-        "key": "ctrl+v",
-        "command": "editor.action.clipboardPasteAction"
-    },
-    {
         "key": "cmd+v",
         "command": "-editor.action.clipboardPasteAction"
     },
     {
-        "key": "ctrl+z",
+        "key": "cmd+z",
         "command": "undo"
     },
     {
@@ -213,11 +168,7 @@
         "command": "editor.action.clipboardCutAction"
     },
     {
-        "key": "cmd+x",
-        "command": "-editor.action.clipboardCutAction"
-    },
-    {
-        "key": "ctrl+a",
+        "key": "cmd+a",
         "command": "editor.action.selectAll"
     },
     {
@@ -225,7 +176,7 @@
         "command": "-editor.action.selectAll"
     },
     {
-        "key": "ctrl+a",
+        "key": "cmd+a",
         "command": "workbench.action.terminal.selectAll",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
@@ -235,7 +186,7 @@
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+a",
+        "key": "cmd+a",
         "command": "list.selectAll",
         "when": "listFocus && listSupportsMultiselect && !inputFocus"
     },
@@ -305,22 +256,6 @@
         "when": "debuggersAvailable && debugState != 'initializing'"
     },
     {
-        "key": "f5",
-        "command": "-debug.openView",
-        "when": "!debuggersAvailable"
-    },
-    {
-        "key": "f5 ctrl",
-        "command": "dart.startDebugging"
-    },
-    {
-        "key": "alt+f",
-        "command": "workbench.action.tasks.runTask",
-        "args": {
-          "text": "flutter clean"
-        }
-    },
-    {
         "key": "shift+alt+f",
         "command": "-notebook.formatCell",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
@@ -364,7 +299,7 @@
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+alt+up",
+        "key": "alt+cmd+up",
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
@@ -374,7 +309,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+down",
+        "key": "alt+cmd+down",
         "command": "editor.action.insertCursorBelow",
         "when": "editorTextFocus"
     },
@@ -388,7 +323,7 @@
         "command": "-workbench.action.showCommands"
     },
     {
-        "key": "ctrl+y",
+        "key": "cmd+y",
         "command": "redo"
     },
     {
@@ -406,7 +341,7 @@
         "when": "terminal.active"
     },
     {
-        "key": "ctrl+`",
+        "key": "ctrl+z",
         "command": "workbench.debug.action.toggleRepl",
         "when": "workbench.panel.repl.view.active"
     },
@@ -424,7 +359,7 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "cmd+s",
+        "key": "ctrl+[IntlBackslash]",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
@@ -443,18 +378,8 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "alt+backspace",
-        "command": "-deleteWordLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+shift+left",
-        "command": "cursorWordEndLeftSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+alt+left",
-        "command": "cursorWordEndLeftSelect",
+        "command": "cursorWordLeftSelect",
         "when": "textInputFocus"
     },
     {
@@ -464,22 +389,246 @@
     },
     {
         "key": "shift+alt+right",
-        "command": "-cursorWordEndRightSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+alt+right",
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+right",
-        "command": "-editor.action.smartSelect.expand",
+        "key": "shift+alt+left",
+        "command": "-cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+g",
+        "command": "flutter.packages.get"
+    },
+    {
+        "key": "alt+f",
+        "command": "flutter.clean"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-notebook.focusBottom",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-commentsFocusViewFromFilter",
+        "when": "commentsFilterFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "-cursorBottomSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-explorer.openAndPassFocus",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-interactive.scrollToBottom",
+        "when": "resourceScheme == 'vscode-interactive'"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-keybindings.editor.focusKeybindings",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-list.scrollDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-problems.action.focusProblemsFromFilter",
+        "when": "problemsFilterFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-problems.action.open",
+        "when": "problemFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-revealReference",
+        "when": "listFocus && referenceSearchVisible && !inputFocus && !treeElementCanCollapse && !treeElementCanExpand"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-search.action.openResult",
+        "when": "fileMatchOrMatchFocus && searchViewletVisible"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-selectNextCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-workbench.action.terminal.scrollToNextCommand",
+        "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+k z",
+        "command": "-workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.start"
+    },
+    {
+        "key": "f6",
+        "command": "flutter.runReleaseMode"
+    },
+    {
+        "key": "f7",
+        "command": "flutter.runProfileMode"
+    },
+    {
+        "key": "f10",
+        "command": "flutter.selectDevice"
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.diffWithNext",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.diffWithNextInDiffLeft",
+        "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.key.alt+.",
+        "when": "gitlens:key:."
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.diffWithNextInDiffRight",
+        "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "cmd+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "cmd+z",
+        "command": "-inlineChat.unstash",
+        "when": "inlineChatHasStashedSession && !editorReadonly"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-cursorLineStart",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+f2",
+        "command": "-editor.action.accessibleView"
+    },
+    {
+        "key": "alt+f2",
+        "command": "-workbench.action.terminal.focusAccessibleBuffer",
+        "when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+f2",
+        "command": "editor.debug.action.selectionToRepl"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-f2f-properties-conveter.covertFromClipboard",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+cmd+left",
-        "command": "-editor.action.smartSelect.shrink",
-        "when": "editorTextFocus"
+        "key": "ctrl+left",
+        "command": "editor.action.selectToBracket"
     },
+    {
+        "key": "cmd+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+cmd+,",
+        "command": "gitlens.diffWithPreviousInDiffRight",
+        "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+cmd+g ,",
+        "command": "-gitlens.diffWithPreviousInDiffRight",
+        "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+cmd+g ctrl+alt+p",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+cmd+g ,",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPreviousInDiffLeft",
+        "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+cmd+g ctrl+alt+p",
+        "command": "-gitlens.diffWithPreviousInDiffLeft",
+        "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+cmd+g ,",
+        "command": "-gitlens.diffWithPreviousInDiffLeft",
+        "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:tracked'"
+    },
+    {
+        "key": "alt+cmd+z",
+        "command": "copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "shift+alt+cmd+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    }
 ]
