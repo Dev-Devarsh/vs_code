@@ -1,0 +1,170 @@
+{
+  "editor.fontFamily": "'cascadia code',Consolas, 'Courier New', monospace",
+  "editor.guides.bracketPairs": "active",
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 20,
+  "dart.previewFlutterUiGuides": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "debug.console.fontSize": 16,
+  "dart.previewHotReloadOnSaveWatcher": true,
+  "dart.hotReloadOnSave": "all",
+  "editor.autoIndent": "full",
+  "editor.autoSurround": "languageDefined",
+  "editor.comments.insertSpace": true,
+  "editor.copyWithSyntaxHighlighting": true,
+  "editor.cursorWidth": 2,
+  "editor.dragAndDrop": true,
+  "explorer.confirmDelete": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.formats": "explicit" // TODO enable
+  },
+  "editor.defaultFormatter": "Dart-Code.dart-code",
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.autoIndent": "full",
+    "editor.dropIntoEditor.enabled": true,
+    "editor.suggest.showConstructors": true,
+  },
+  "update.mode": "manual",
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none",
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "editor.inlineSuggest.enabled": true,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#f4b006",
+    "tab.activeBorderTop": "#FFCB6B",
+    "tab.hoverBackground": "#ffffff32",
+    "tab.activeBackground": "#00000084",
+    "terminalCursor.foreground": "#FFCB6B",
+    "terminalCursor.background": "#000000",
+    "editorCursor.foreground": "#FFCC00",
+    "scrollbar.shadow": "#0F111A00",
+    "editor.findMatchBorder": "#FFCC00",
+    "editor.findMatchBackground": "#08080800",
+    "editor.findMatchHighlightBorder": "#ffffff7b",
+    "editor.findMatchHighlightBackground": "#3481d971",
+    "editor.inactiveSelectionBackground": "#00000000",
+    "searchEditor.findMatchBackground": "#08080800",
+    "searchEditor.findMatchBorder": "#ffffff7b",
+    "editor.lineHighlightBorder": "#ffcc0034",
+    "editor.wordHighlightBackground": "#00000000",
+    "statusBar.background": "#1458a5f0",
+    "statusBar.foreground": "#ffffff",
+    "badge.background": "#ffcc00ea",
+    "badge.foreground": "#000000",
+    "activityBar.activeBackground": "#4c82c164",
+    "activityBar.activeBorder": "#0091ff",
+    "activityBar.border": "#fffefe3b",
+    "editor.hoverHighlightBackground": "#ffffff20",
+    "menubar.selectionBackground": "#1379edab",
+    "menubar.selectionForeground": "#ffffff",
+    ////////////////////////////////////////////////////////////////
+    // "dart.flutterUiGuides": "#4c92fc",
+    "activityBarBadge.background": "#ffcc00ea",
+    "activityBarBadge.foreground": "#000000",
+    // "button.border": "#FFCC00",
+    // "editor.lineHighlightBackground": "#625a5a5a",
+    "editor.background": "#0d0d0d"
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[Default Dark+]": {
+      "enabled": true,
+      "rules": {
+        "*.declaration": {
+          "underline": true
+        },
+        "comment": "#ff6969",
+      }
+    }
+  },
+  "dart.enableSdkFormatter": true,
+  "dart.runPubGetOnNestedProjects": "both",
+  "dart.updateImportsOnRename": true,
+  "outline.problems.colors": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "explorer.openEditors.minVisible": 100,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.sideBar.location": "right",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "dart.lineLength": 110,
+  "task.problemMatchers.neverPrompt": {
+    "shell": true
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.formatOnPaste": true,
+  "gitlens.defaultDateLocale": null,
+  "workbench.list.multiSelectModifier": "alt",
+  "editor.showFoldingControls": "always",
+  "editor.insertSpaces": false,
+  "gitlens.graph.minimap.additionalTypes": [
+    "remoteBranches"
+  ],
+  "gitlens.graph.layout": "editor",
+  "gitlens.codeLens.scopes": [
+    "document",
+    "containers",
+  ],
+  "editor.suggest.showStatusBar": true,
+  "zenMode.hideStatusBar": false,
+  "debug.showInStatusBar": "always",
+  "gitlens.changes.locations": [
+    "gutter",
+    "line",
+    "overview"
+  ],
+  "gitlens.currentLine.scrollable": true, // [true] see commit details on hove of current line , [false] hove on cursor of current line to see commit details
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.scrollback": 5000,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Default Dark+",
+  "scm.showOutgoingChanges": "never",
+  "git.followTagsWhenSync": true,
+  "window.commandCenter": false,
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.graph.minimap.enabled": false,
+  "dart.flutterSdkPath": "/Users/duhsyant/development/flutter",
+  "dart.openDevTools": "flutter",
+  "editor.accessibilitySupport": "off",
+  "gitlens.views.scm.grouped.views": {
+    "commits": false,
+    "branches": false,
+    "remotes": true,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "repositories": false,
+    "searchAndCompare": false,
+    "launchpad": false
+  }
+}
