@@ -1,14 +1,12 @@
 {
   "editor.fontFamily": "'cascadia code',Consolas, 'Courier New', monospace",
-  "bracket-pair-colorizer-2.depreciation-notice": false,
   "editor.guides.bracketPairs": "active",
-  "files.autoSave": "afterDelay",
   "editor.fontSize": 18,
   "dart.previewFlutterUiGuides": true,
   "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "dart.previewHotReloadOnSaveWatcher": true,
-  "dart.hotReloadOnSave": "always",
+  "dart.hotReloadOnSave": "all",
   // "workbench.list.multiSelectModifier": "alt",
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -16,14 +14,20 @@
   "explorer.confirmDelete": false,
   "[dart]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.formatOnType": true,
-    "editor.selectionHighlight": false,
+    "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
+    },
+    "editor.selectionHighlight": true,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false,
-    "editor.defaultFormatter": "Dart-Code.dart-code"
-  },
+    "editor.tabCompletion": "on",
+    "editor.wordBasedSuggestions": "allDocuments",
+    "editor.foldingImportsByDefault": true,
+    "editor.acceptSuggestionOnCommitCharacter": true
+    },
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "manual",
   "dart.previewFlutterUiGuidesCustomTracking": true,
@@ -37,7 +41,7 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "editor.inlineSuggest.enabled": true,
-  "dart.debugExternalPackageLibraries": true,
+  "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
 
 
@@ -51,13 +55,16 @@
     "editorCursor.foreground": "#FFCC00",
     "scrollbar.shadow": "#0F111A00",
     "editor.findMatchBorder": "#FFCC00",
+    "editor.multiCursorPaste": "full",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorWidth": 3,
     "editor.findMatchBackground": "#08080800",
     "editor.findMatchHighlightBorder": "#ffffff7b",
     "editor.findMatchHighlightBackground": "#3481d971",
-    "editor.inactiveSelectionBackground": "#00000000",
+    "editor.inactiveSelectionBackground": "#4f4e4e37",
     "searchEditor.findMatchBackground": "#08080800",
     "searchEditor.findMatchBorder": "#ffffff7b",
-    "editor.lineHighlightBorder": "#ffcc0034",  
+    "editor.lineHighlightBorder": "#ffcc0034",
     "editor.wordHighlightBackground": "#00000000",
     "statusBar.background": "#1458a5f0",
     "statusBar.foreground": "#ffffff",
@@ -78,15 +85,39 @@
   "outline.problems.colors": true,
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "explorer.openEditors.minVisible": 100,
-  "editor.stickyScroll.enabled": true,
   "tabnine.experimentalAutoImports": true,
   "workbench.sideBar.location": "right",
-  "editor.defaultFormatter": "vscode.markdown-language-features",
-  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.defaultFormatter": "Dart-Code.dart-code",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "thunder-client.saveTokenPerEnvironment": true,
+  "thunder-client.customLocation": "C:\\Users\\devar\\.vscode",
+  "editor.accessibilitySupport": "off",
+  "window.commandCenter": false,
+  "thunder-client.httpLibrary": "axios",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "dart.lineLength": 150,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "javascript.validate.enable": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "debug.allowBreakpointsEverywhere": true,
   "workbench.colorTheme": "Default Dark+",
-  "window.zoomLevel": -1
+  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.launchpad.indicator.polling.enabled": false,
+"files.autoSave": "afterDelay",
 }
